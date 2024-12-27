@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="#FFEB3B"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="Hello Akshita!"
+        android:textAllCaps="true"
+        android:textColor="#E91E63"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        />
+
+    <EditText
+        android:id="@+id/editViewId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your name: "
+        android:inputType="text"
+        android:maxLength="20"
+        android:textColor="#1119AAE9"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        tools:layout_editor_absoluteX="116dp"
+        tools:layout_editor_absoluteY="94dp" />
+
+    <Button
+        android:id="@+id/btnId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:clickable="true"
+        android:enabled="true"
+        android:padding="20dp"
+        android:text="Click me!"
+        android:textColorLink="#7980DE"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="162dp"
+        tools:layout_editor_absoluteY="402dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
