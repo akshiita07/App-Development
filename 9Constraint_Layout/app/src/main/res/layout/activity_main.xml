@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--to link layout u created with android app-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="56dp"
+        android:text="App Dev"
+        android:textSize="32sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:text="Text view"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Hello World"
+        android:textSize="32sp"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline4" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="430dp" />
+
+    <!--1. responsive +dynamic layouts-->
+    <!--2. add CONSTRAINTS: how child view is positioned & sized relative to each other & parent layout-->
+    <!--3. each view has 4 sides called ANCHOR POINTS: blue circular points-> operate as source/target for constraints-->
+    <!--4.syntax: app:layout_constraint<source_anchor: start/end/top/bottom>_to<target_anchor: start/end/top/bottom>of="<target_id: id of any view/parent>" -->
+    <!--TYPES OF CONSTRAINTS: -->
+    <!--1. top to top: top of source view same as top of target view-->
+    <!--2. bottom to bottom: bottom of source view same as bottom of target view-->
+    <!--3. top to bottom: top of source view same as bottom of target view-->
+    <!--4. bottom to top: bottom of source view same as top of target view-->
+    <!--5. start to start: start of source view same as start of target view ie same | vertical position in start-->
+    <!--6. end to end: start of source view same as end of target view ie same | vertical position in end-->
+    <!--7. end to start: end of source view same as start of target view-->
+    <!--8. start to end: start of source view same as end of target view ie same | vertical position in end-->
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--specify poisition of child elements relative to each other-->
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Text number 1"
+        android:textSize="32sp"/>
+
+    <TextView
+        android:layout_alignLeft="@id/text1"
+        android:layout_below="@+id/text1"
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Text number 2"
+        android:layout_margin="20dp"
+        android:padding="20dp"
+        android:textSize="32sp"/>
+
+    <!--by def both text views are overlapping-->
+    <!--on specifying layout_below & then the id number-->
+<!--    layout_centerHorizontal to position it in center-->
+<!--    layout_alignLeft to align towards left or twds right usinglayout_alignRight -->
+</RelativeLayout>
